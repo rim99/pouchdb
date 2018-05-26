@@ -780,7 +780,7 @@ adapters.forEach(function (adapter) {
 
     // Note for the following test that CouchDB's implementation of /_changes
     // with `descending=true` ignores any `since` parameter.
-    it('Descending many changes', function (done) {
+    it.skip('Descending many changes', function (done) {
       var db = new PouchDB(dbs.name);
       var docs = [];
       var num = 100;
